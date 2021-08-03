@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/ycecah3bx7n7pmqo?svg=true)](https://ci.appveyor.com/project/Yu-Smirnova/aqa-hw-2-4-page-objects)
