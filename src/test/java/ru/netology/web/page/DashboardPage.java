@@ -36,10 +36,12 @@ public class DashboardPage {
     }
 
     public void correctBalances() {
-        if (getCardBalance("1") > 10_000) {
-            TopUpCardBalance("2", getCardBalance("1") - 10_000);
-        } else {
-            TopUpCardBalance("1", getCardBalance("2") - 10_000);
+        if(getCardBalance("1") != getCardBalance("2")){
+            if (getCardBalance("1") > 10_000) {
+                TopUpCardBalance("2", getCardBalance("1") - 10_000);
+            } else {
+                TopUpCardBalance("1", getCardBalance("2") - 10_000);
+            }
         }
     }
 }
