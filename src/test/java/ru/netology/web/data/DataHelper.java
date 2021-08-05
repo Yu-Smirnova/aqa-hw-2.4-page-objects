@@ -42,13 +42,12 @@ public class DataHelper {
         return new CardInfo("2", "5559 0000 0000 0002", 10_000);
     }
 
-    public static CardInfo findAnotherCardByThisCardId(String id) {
-        CardInfo foundAnotherCard = null;
+    public static CardInfo getCardInfo(String id) {
         if (id.equals(getFirstCardInfo().getId())) {
-            foundAnotherCard = getSecondCardInfo();
-        } else if (id.equals(getSecondCardInfo().getId())) {
-            foundAnotherCard = getFirstCardInfo();
+            return getFirstCardInfo();
+        } else {
+            return getSecondCardInfo();
         }
-        return foundAnotherCard;
     }
+
 }
